@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="sign-up.css">
+</head>
+
+<body>
+  <div class="main">
+
+    <h1>Sign Up</h1>
+    <p>Please fill out this form to create an account!</p>
+    <hr>
+
+    <form>
+      <div class="name">
+        <label for="firstname">
+          <input type="text" name="firstname" id="firstname" placeholder="First Name" class="design" required>
+        </label>
+
+        <label for="lastname">
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" class="design" required>
+        </label>
+      </div>
+
+      <div class="details">
+        <label for="email">
+          <input type="email" name="email" id="email" placeholder="Email" class="design" required>
+        </label>
+
+        <label for="password">
+          <input type="password" name="password" id="password" placeholder="Password" class="design" required>
+        </label>
+
+        <label for="confirm-pass">
+          <input type="password" name="confirm-password" id="confirm-pass" placeholder="Confirm Password" class="design"
+            required>
+        </label>
+
+        <div class="terms">
+          <input type="checkbox" id="checkbox" required>
+          <label for="checkbox">I accept the Terms of Use & Privacy Policy</label>
+        </div>
+      </div>
+
+      <button type="submit" class="signup">Sign Up</button>
+    </form>
+  </div>
+</body>
+
+</html>

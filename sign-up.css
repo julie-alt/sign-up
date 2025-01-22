@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(215, 97%, 49%, 0.522);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 1.5rem;
+}
+
+/* Main Container */
+.main {
+  text-align: center;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Headings and Horizontal Line */
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+hr {
+  width: 70%;
+  margin: 1rem auto;
+  border: 0.5px solid gray;
+}
+
+/* Name Inputs */
+.name {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#firstname,
+#lastname {
+  width: 70%;
+  /* Responsive width */
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(11, 155, 155);
+}
+
+/* Details Section */
+.details {
+  margin-bottom: 1.5rem;
+}
+
+#email,
+#password,
+#confirm-pass {
+  height: 2.5rem;
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(11, 155, 155);
+  margin-bottom: 1rem;
+}
+
+/* Checkbox */
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Signup Button */
+.signup {
+  display: inline-block;
+  background-color: rgb(11, 155, 155);
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+  background-color: rgb(9, 135, 135);
+}
+
+/* Focus States */
+input:focus {
+  outline: none;
+  border: 2px solid rgb(70, 26, 112);
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+  .name {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #firstname,
+  #lastname,
+  #email,
+  #password,
+  #confirm-pass {
+    width: 100%;
+  }
+
+  .main {
+    padding: 1.5rem 2rem;
+
+  }
+}
+
+/* Image Placeholder */
+.main:before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  background: url('sign-up.png') no-repeat center center / cover;
+  border-radius: 50%;
+}
